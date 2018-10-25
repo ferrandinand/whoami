@@ -18,7 +18,7 @@ func main() {
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(os.Stdout, "whoami %s\n", hostname)
         fmt.Fprintf(os.Stdout, "I'm canary %s\n", hostname)
-       	fmt.Fprintf(w, "I'm a second version of a canary %s\n", hostname)
+       	fmt.Fprintf(w, "I'm a third version of a canary %s\n", hostname)
     })
 
 
