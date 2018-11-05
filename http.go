@@ -6,7 +6,6 @@ import (
   "net/http"
   "log"
 
-  "github.com/golang/glog"
 )
 
 func main() {
