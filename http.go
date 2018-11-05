@@ -21,6 +21,9 @@ func main() {
        	fmt.Fprintf(w, "I'm a third version of a canary %s\n", hostname)
     })
 
+    fmt.Fprintf(os.Stdout, "canary testing %s\n", hostname)
+    fmt.Fprintf(os.Stdout,"I'm a third version of a canary %s\n", hostname)
+    fmt.Fprintf(os.Stdout, "Testing traefik %s\n", hostname)
 
     log.Fatal(http.ListenAndServe(":" + port, nil))
 }
